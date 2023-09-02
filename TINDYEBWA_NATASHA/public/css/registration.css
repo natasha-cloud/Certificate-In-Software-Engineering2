@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main{
+  max-width: 980px;
+  margin-left:auto ;
+  margin-right:auto ;
+}
+
+header{
+  background-color: black;
+  color: lightgrey;
+ text-align: center;
+}
+
+.form-section{
+  margin: 10px 0;
+  color: rgb(212, 212, 212);
+}
+
+.section-title{
+  color: rgb(150, 150, 150);   
+  margin:16px 0;
+  padding: 5px;
+  
+}
+
+.header-underline{
+  height: 6px;
+  background-color: gray;
+  margin-top: 5px;
+
+}
+input{
+  padding: 8px 16px;
+  border: 2px solid rgb(179, 178, 178);
+}
+
+.top-inputs .form-input, .bottom-inputs .form-input{
+  width:45%;
+  margin: 0 10px 0 0 ;
+  
+}
+
+.top-inputs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bottom-inputs{
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-input{
+  width:95.5%;
+}
+
+.button-div button{
+  float: right;
+  padding: 8px 16px;
+  background-color: rgb(226, 147, 0);
+  border: 1px solid rgb(255, 182, 46);
+  cursor: pointer;
+  border-radius: 9px;
+  width: 40%;
+}
+

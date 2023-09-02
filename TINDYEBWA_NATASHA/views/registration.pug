@@ -1,0 +1,64 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title GENQ KCY FORM
+  link(rel='stylesheet' href='css/registration.css')
+#main
+  header
+    h1 GENQ KYC FORM
+  form(name='registration' action='/registration' method='POST' onsubmit='return validate(event);')
+    // Bio Section
+    section.form-section
+      .section-title
+        h1 Bio Data
+        hr.header-underline
+      // Bio body
+      .form-group
+        .top-inputs
+          input.form-input(type='text' placeholder='First Name' name='firstName')
+          span#firstNameError
+          input.form-input(type='text' placeholder='Last Name' name='lastName')
+          span#lastNameError
+        .bottom-inputs
+          input.form-input(type='date' placeholder='Date of Bith(DD/MM/YYYY)' name='date')
+          span#dateError
+          input.form-input(type='text' placeholder='Gender' name='gender')
+          span#genderError
+    // Location Section
+    section.form-section
+      .section-title
+        h1 Location
+        hr.header-underline
+      // Location body
+      .form-group
+        .top-inputs
+          input.form-input(type='text' placeholder='Country' name='country')
+          span#countryError
+          input.form-input(type='text' placeholder='State/District' name='state')
+          span#stateError
+        .bottom-inputs
+          input.form-input(type='text' placeholder='Town' name='town')
+          span#townError
+          input.form-input(type='text' placeholder='Zip Code' name='zipcode')
+          span#zipcodeError
+    // Contacts and Address Section
+    section.form-section
+      .section-title
+        h1 Contacts and Address
+        hr.header-underline
+      // Contacts and Address body
+      .form-group
+        .top-inputs
+          input.form-input(type='text' placeholder='Phone Number 1' name='phone1')
+          span#phone1Error
+          input.form-input(type='text' placeholder='Phone Number 2' name='phone2')
+          span#phone2Error
+        div
+          input.form-input.email-input(type='email' placeholder='Email' name='email')
+          span#emailError
+    .button-div
+      button.btn.btn-primary.form-width(type='submit' name='submit') Submit
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js')
+script(src='/js/validation.js')
